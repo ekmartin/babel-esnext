@@ -12,7 +12,8 @@ $ npm install --global babel-esnext
 Babel 6 requires presets to be installed locally, which means something like
 `babel-node --presets es2015,stage-0` won't work wherever you want.
 
-This let's you instead run:
+This does however, and works as a wrapper around `babel-node`:
+
 ```bash
 # Empty shell:
 $ babel-esnext
