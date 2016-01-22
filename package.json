@@ -5,7 +5,8 @@
   "bin": "dist.js",
   "main": "index.js",
   "scripts": {
-    "build": "babel cli.js > dist.js"
+    "build": "babel cli.js > dist.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
