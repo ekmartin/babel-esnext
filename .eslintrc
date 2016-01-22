@@ -1,4 +1,0 @@
-{
-  "extends": "webkom",
-  "parser": "babel-eslint"
-}

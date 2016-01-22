@@ -19,10 +19,10 @@ This does however, and works as a wrapper around `babel-node`:
 # Empty shell:
 $ babel-esnext
 
-# Arguments passed to babel-node (note the double dash):
-$ babel-esnext -- --eval "console.log(5)"
+# Passing arguments to babel-node:
+$ babel-esnext --eval "console.log(5)"
 
-# Run a file:
+# Running a file:
 $ babel-esnext filename.js
 ```
 
