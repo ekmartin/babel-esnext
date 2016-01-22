@@ -2,7 +2,7 @@
 import path from 'path';
 import fs from 'fs';
 import { transform } from 'babel-core';
-import { execSync, spawn } from 'child_process';
+import { spawn } from 'child_process';
 
 function startShell(restArgs) {
   // Spawn a babel-node shell in the correct location:
@@ -21,7 +21,7 @@ function runFile(filename) {
   // we'll need to compile it manually with Babel, and then pipe it
   // into a regular Node process (kind of hacky):
   const originalPath = process.cwd();
-  const file = fs.readFileSync(separator).toString();
+  const file = fs.readFileSync(filename).toString();
 
   // Babel needs to be in the same folder as node_modules to access the
   // presets/plugins:
@@ -47,4 +47,3 @@ if (separator === '--' || !args.length) {
 } else if (separator) {
   runFile(separator);
 }
-

@@ -1,4 +1,5 @@
-# babel-esnext
+# babel-esnext [![Build status](https://ci.frigg.io/badges/ekmartin/babel-esnext/)](https://ci.frigg.io/ekmartin/babel-esnext/last/)
+
 > A babel-node wrapper with ES2015+ features
 
 Similar to `babel-node --stage 0` in Babel 5 and downwards.
